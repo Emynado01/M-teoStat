@@ -2,10 +2,11 @@
   "name": "meteostat-ca",
   "version": "0.1.0",
   "private": true,
+  "engines": { "node": "20.x" },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "node node_modules/next/dist/bin/next start -p $PORT",
     "lint": "next lint"
   },
   "dependencies": {
@@ -25,3 +26,4 @@
     "tailwindcss": "^4.0.15"
   }
 }
+
